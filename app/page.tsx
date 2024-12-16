@@ -1,6 +1,7 @@
 import Image from 'next/image'
-import { Button } from "@/components/ui/button"
-import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card"
+import { Button } from "../components/ui/button"
+import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "../components/ui/card"
+import hero from "../images/hero.png"
 
 export default function Home() {
   return (
@@ -15,8 +16,8 @@ export default function Home() {
         <section className="mb-12">
           <div className="relative h-64 md:h-96 rounded-lg overflow-hidden mb-6">
             <Image
-              src="/images/hero.png"
-              alt="未来の不動産テクノロジー"
+              src={hero}
+              alt="未来のテクノロジー"
               layout="fill"
               objectFit="cover"
               className="transition-transform duration-300 transform hover:scale-105"
